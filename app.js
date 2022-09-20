@@ -94,7 +94,7 @@ function eliminarTareasLocalStorage (tarea) {
         tareas = JSON.parse(localStorage.getItem('tareas'))
     }
 
-    const tareaIndex = tarea[0].innerText;
+    const tareaIndex = tarea.innerText;
     tareas.splice(tareas.indexOf(tareaIndex), 1);
     localStorage.setItem('tareas', JSON.stringify(tareas));
 }
