@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', obtenerTareas);
 
 btnAgregar.addEventListener('click', agregarTarea);
 
-// funciones
+// funcion agregar tarea
 
 function agregarTarea(event) {
     event.preventDefault();
@@ -50,6 +50,8 @@ function guardarLocalStorage (tarea) {
     localStorage.setItem('tareas', JSON.stringify(tareas));
 }
 
+//obtener tareas del localstorage
+
 function obtenerTareas () {
     let tareas;
     if(localStorage.getItem('tareas') === null) {
@@ -81,6 +83,8 @@ function obtenerTareas () {
         listaTareas.appendChild(nuevaTarea)
     })
 }
+
+//eliminar tarea del localstorage
 
 function eliminarTareasLocalStorage (tarea) {
     let tareas;
