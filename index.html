@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Titulo de body -->
+    <div class="container">
+        <div class="row mt-3 mt-md-5 mt-lg-5 justify-content-center ">
+          <div class="col-10 col-md-12 col-lg-12 d-flex justify-content-md-center justify-content-lg-center flex-column flex-md-column flex-lg-column">
+              <h1 class="display-5 text-center">To Do List</h1>
+              <p class="lead text-center">EMPIEZA HOY</p>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-center justify-content-md-center justify-content-lg-center">
+          <div class="col-8 col-md-10 col-lg-10 mb-lg-5">
+              <hr>
+          </div>
+        </div>
+    </div>
+
+   
+
+    <!-- card nota de cosas para hacer -->
+    <form class="container">
+        <div class="row d-flex justify-content-center mt-4 mb-4">
+            <div class="col-10 col-md-6 col-lg-6 p-lg-5 p-md-5 border-form" id="form">
+                <!-- <div class="row">
+                    <div class="col-lg-12">
+                        <div class="input-group mb-3" id="containerTitulo">
+                            <input type="text" class="form-control" id="inputTitulo" placeholder="Titulo" aria-label="Recipient's username" aria-describedby="button-addon2">
+                            <button class="btn btn-outline-secondary" type="submit" id="button-titulo">Listo</button>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" id="inputTarea" placeholder="Ingrese Tarea" aria-label="Recipient's username" aria-describedby="button-addon2">
+                            <button class="btn btn-outline-secondary" type="submit" id="button-addon2">+</button>
+                        </div>
+                        
+                        <div id="container-tareas">
+                            <ul id="lista-tareas">
+
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </form>
+
+    <div class="row d-flex justify-content-lg-center">
+        <div class="col-lg-3">
+            <button id="btn-primary" class="btn btn-primary" type="button"></button>
+            <button id="btn-success" class="btn btn-success" type="button"></button>
+            <button id="btn-info" class="btn btn-info" type="button"></button>
+            <button id="btn-secondary" class="btn btn-secondary" type="button"></button>
+           
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="app.js"></script>
+    <script src="btn_classes.js"></script>
+
+</body>
+</html>
