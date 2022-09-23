@@ -40,25 +40,21 @@ function agregarTarea(event) {
 //guardar en local storage
 function guardarLocalStorage (tarea) {
     let tareas;
-    if(localStorage.getItem('tareas') === null) {
-        tareas = [];
-    } else {
-        tareas = JSON.parse(localStorage.getItem('tareas'))
-    }
+    
+    tareas = JSON.parse(localStorage.getItem('tareas')) || []
 
     tareas.push(tarea);
     localStorage.setItem('tareas', JSON.stringify(tareas));
 }
 
+
+
 //obtener tareas del localstorage
 
 function obtenerTareas () {
     let tareas;
-    if(localStorage.getItem('tareas') === null) {
-        tareas = [];
-    } else {
-        tareas = JSON.parse(localStorage.getItem('tareas'))
-    }
+    tareas = JSON.parse(localStorage.getItem('tareas')) || []
+    
     tareas.forEach(function(tarea){
         //tarea li
         const nuevaTarea = document.createElement('li');
@@ -88,11 +84,7 @@ function obtenerTareas () {
 
 function eliminarTareasLocalStorage (tarea) {
     let tareas;
-    if(localStorage.getItem('tareas') === null) {
-        tareas = [];
-    } else {
-        tareas = JSON.parse(localStorage.getItem('tareas'))
-    }
+    tareas = JSON.parse(localStorage.getItem('tareas')) || []
 
     const tareaIndex = tarea.innerText;
     tareas.splice(tareas.indexOf(tareaIndex), 1);
