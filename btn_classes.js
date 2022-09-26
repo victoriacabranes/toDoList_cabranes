@@ -8,22 +8,33 @@ const btnSecondary = document.getElementById('btn-secondary');
 const btnInfo = document.getElementById('btn-info');
 const form = document.getElementById('form')
 
+//funcion click event listener
+
 btnPrimary.addEventListener('click', () => {
-    form.classList.add('primary')
+    form.style.backgroundColor = '#ffd6ff'
+    form.style.borderColor = '#ffd6ff'
+    document.getElementById('button-addon2').style.backgroundColor = '#dd96a5'
 
 })
 
 btnSuccess.addEventListener('click', () => {
-    form.classList.add('success')
+    form.style.backgroundColor = '#bbd0ff'
+    form.style.borderColor = '#bbd0ff'
+    document.getElementById('button-addon2').style.backgroundColor = '#4d679e'
 
+})
+
+
+btnInfo.addEventListener('click', () => {
+    form.style.backgroundColor = '#ffdab9'
+    form.style.borderColor = '#ffdab9'
+    document.getElementById('button-addon2').style.backgroundColor = '#dd9e67'
+    
 })
 
 btnSecondary.addEventListener('click', () => {
-    form.classList.add('secondary')
-
-})
-
-btnInfo.addEventListener('click', () => {
-    form.classList.add('info')
+    form.style.backgroundColor = 'white'
+    form.style.borderColor = 'white'
+    document.getElementById('button-addon2').style.backgroundColor = '#a09e9d'
 
 })

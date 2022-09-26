@@ -20,45 +20,58 @@
     border-color: #ffd6ff;
 }
 
+.btn-primary:hover {
+    background-color: #fdc4e3;
+    border-color: #fdc4e3;
+}
+
 .btn-success {
     background-color: #bbd0ff;
     border-color: #bbd0ff;
 }
+
+.btn-success:hover {
+    background-color: #95b7ff;
+    border-color: #95b7ff;
+}
+
 
 .btn-info {
     background-color: #ffdab9;
     border-color: #ffdab9;
 }
 
+.btn-info:hover {
+    background-color: #f8be8b;
+    border-color: #f8be8b;
+}
+
 .btn-secondary {
-    background-color: #e6ccb2;
-    border-color: #e6ccb2;
+    background-color: #dfd9d3;
+    border-color: #dfd9d3;
 }
 
-
-.primary {
-    background-color: #ffd6ff;
-    border-color: #ffd6ff;
-    
+.btn-secondary:hover {
+    background-color: #a09e9d;
+    border-color: #a09e9d;
 }
 
-.success {
-    background-color: #bbd0ff;
-    border-color: #bbd0ff;
-}
-
-.info {
-    background-color: #ffdab9;
-    border-color: #ffdab9;
-}
-
-.secondary {
-    background-color: #e6ccb2;
-    border-color: #e6ccb2;
-}
 
 ul {
     list-style-type: none;
     display: inline-flex;
     flex-direction: column;
+}
+
+.btn {
+    height: 2rem;
+    width: 2rem;
+}
+
+.btn-outline-secondary {
+    height: 2.5rem;
+    background-color: rgb(185, 183, 183);
+    border-color: rgb(185, 183, 183);
+    color: white;
+    
 }
