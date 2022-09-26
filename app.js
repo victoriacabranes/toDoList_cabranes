@@ -28,6 +28,20 @@ function agregarTarea(event) {
         nuevaTarea.remove();
         btnEliminar.remove();
         eliminarTareasLocalStorage(nuevaTarea)
+        Toastify({
+            text: "Tarea eliminada",
+            duration: 3000,
+            
+            newWindow: true,
+            close: true,
+            gravity: "bottom", // `top` or `bottom`
+            position: "center", // `left`, `center` or `right`
+            
+            style: {
+              background: "linear-gradient(to right, #AC93A2, #8D7290)",
+            },
+            
+        }).showToast();
     })
     
     nuevaTarea.appendChild(btnEliminar);
@@ -68,25 +82,23 @@ function obtenerTareas () {
         btnEliminar.classList.add('btn-primary');
         btnEliminar.innerText = 'X'
         btnEliminar.addEventListener('click', () => {
-            
+            nuevaTarea.remove();
+            btnEliminar.remove();
+            eliminarTareasLocalStorage(nuevaTarea)
             Toastify({
-                text: "This is a toast",
+                text: "Tarea eliminada",
                 duration: 3000,
-                // destination: ,
-                // newWindow: true,
+                
+                newWindow: true,
                 close: true,
-                gravity: "top", // `top` or `bottom`
-                position: "left", // `left`, `center` or `right`
-                stopOnFocus: true, // Prevents dismissing of toast on hover
+                gravity: "bottom", // `top` or `bottom`
+                position: "center", // `left`, `center` or `right`
+                
                 style: {
-                    background: "linear-gradient(to right, #00b09b, #96c93d)",
+                  background: "linear-gradient(to right, #AC93A2, #8D7290)",
+                 
                 },
-                onClick: function(){
-                    nuevaTarea.remove();
-                    btnEliminar.remove();
-                    eliminarTareasLocalStorage(nuevaTarea)
-
-                } // Callback after click
+                
             }).showToast();
         })
         
@@ -107,3 +119,4 @@ function eliminarTareasLocalStorage (tarea) {
     tareas.splice(tareas.indexOf(tareaIndex), 1);
     localStorage.setItem('tareas', JSON.stringify(tareas));
 }
+
