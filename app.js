@@ -68,10 +68,7 @@ function obtenerTareas () {
         btnEliminar.classList.add('btn-primary');
         btnEliminar.innerText = 'X'
         btnEliminar.addEventListener('click', () => {
-            nuevaTarea.remove();
-            btnEliminar.remove();
-            eliminarTareasLocalStorage(nuevaTarea)
-
+            
             Toastify({
                 text: "This is a toast",
                 duration: 3000,
@@ -82,10 +79,15 @@ function obtenerTareas () {
                 position: "left", // `left`, `center` or `right`
                 stopOnFocus: true, // Prevents dismissing of toast on hover
                 style: {
-                  background: "linear-gradient(to right, #00b09b, #96c93d)",
+                    background: "linear-gradient(to right, #00b09b, #96c93d)",
                 },
-                onClick: function(){} // Callback after click
-              }).showToast();
+                onClick: function(){
+                    nuevaTarea.remove();
+                    btnEliminar.remove();
+                    eliminarTareasLocalStorage(nuevaTarea)
+
+                } // Callback after click
+            }).showToast();
         })
         
         nuevaTarea.appendChild(btnEliminar);
