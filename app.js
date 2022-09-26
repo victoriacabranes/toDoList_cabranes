@@ -23,6 +23,7 @@ function agregarTarea(event) {
     btnEliminar.type = 'button'
     btnEliminar.classList.add('btn');
     btnEliminar.classList.add('btn-primary');
+
     btnEliminar.innerText = 'X'
     btnEliminar.addEventListener('click', () => {
         nuevaTarea.remove();
@@ -80,6 +81,7 @@ function obtenerTareas () {
         btnEliminar.type = 'button'
         btnEliminar.classList.add('btn');
         btnEliminar.classList.add('btn-primary');
+
         btnEliminar.innerText = 'X'
         btnEliminar.addEventListener('click', () => {
             nuevaTarea.remove();
