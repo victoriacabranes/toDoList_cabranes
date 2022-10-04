@@ -76,3 +76,22 @@ ul {
     
 }
 
+#btn-empezar {
+    width: 8rem;
+    height: 3rem;
+    background-color:  #3d517a;
+    border-color: #3d517a;
+}
+
+#btn-frase {
+    width: 8rem;
+    height: 3rem;
+    background-color:  #3d517a;
+    border-color: #3d517a;
+}
+
+img {
+    width: 25rem;
+    height: auto;
+}
+

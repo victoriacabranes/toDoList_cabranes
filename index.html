@@ -13,12 +13,60 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Titulo de body -->
+
+    <!-- hero + home -->
+    <div class="hero vh-100 d-flex align-items-center">
+        <div class="container">
+            <div class="row justify-content-lg-center">
+                <div class="col-lg-7">
+                    <h1 class="display-5">No lo dejes para mañana. Hazlo hoy</h1>
+                    <p>Con 2 simples pasos podras realizar tus tareas pendientes dia a dia.</p>
+                    <a href="#2step">
+                        <button class="btn btn-danger" id="btn-empezar" type="button">Empezar</button>
+                    </a>
+                </div>
+                <div class="col-lg-5">
+                    <img src="images/list2.png" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- primer paso, obtener frase random -->
+    <div class="container">
+        <div class="row mt-3 mt-md-5 mt-lg-5 justify-content-center ">
+            <div class="col-10 col-md-12 col-lg-12 d-flex justify-content-md-center justify-content-lg-center flex-column flex-md-column flex-lg-column">
+                <h1 class="display-5 text-center" id="2step">1. Obten motivacion</h1>
+                <p class="lead text-center">Elije tu frase del dia</p>
+            </div>
+            <div class="row d-flex justify-content-center justify-content-md-center justify-content-lg-center">
+            <div class="col-8 col-md-10 col-lg-10 mb-lg-5">
+                <hr>
+            </div>
+        </div>
+        <div class="row justify-content-lg-center">
+            <div class="col-12 col-md-4 col-lg-5 ">
+                <div class="card card-display mb-5 mb-lg-5 border-form">
+                    <div class="card-body text-center text-md-center text-lg-center">
+                        <div class="card d-flex justify-content-lg-center">
+                            <p id="frase">Queres una frase motivadora para hoy? Haz click en el boton de abajo!</p>
+                            <p id="autor"></p>
+                            <button class="btn btn-danger" type="button" id="btn-frase">Obtener frase</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </div>
+
+       <!-- segundo paso, to do list -->
     <div class="container">
         <div class="row mt-3 mt-md-5 mt-lg-5 justify-content-center ">
           <div class="col-10 col-md-12 col-lg-12 d-flex justify-content-md-center justify-content-lg-center flex-column flex-md-column flex-lg-column">
-              <h1 class="display-5 text-center">To Do List</h1>
-              <p class="lead text-center">EMPEZA HOY</p>
+                <h1 class="display-5 text-center">2. To Do List</h1>
+                <p class="lead text-center">Agrega las tareas que quieres hacer hoy</p>
           </div>
         </div>
         <div class="row d-flex justify-content-center justify-content-md-center justify-content-lg-center">
@@ -27,8 +75,6 @@
           </div>
         </div>
     </div>
-
-   
 
     <!-- card nota de cosas para hacer -->
     <form class="container mb-5">
@@ -61,6 +107,7 @@
         </div>
     </form>
 
+    <!-- botones para cambiar color a la nota -->
     <div class="row d-flex justify-content-lg-center mb-lg-5">
         <div class="col-lg-2 d-flex justify-content-lg-around">
             <button id="btn-primary" class="btn btn-primary" type="button"></button>
@@ -70,13 +117,12 @@
         </div>
     </div>
 
-
-
-
+<!-- links JS -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="https://cdn.jsdelivr.net/npm/luxon@3.0.4/build/global/luxon.min.js"></script>
     <script src="app.js"></script>
     <script src="btn_classes.js"></script>
+    <script src="fraseapi.js"></script>
 
     <script src="date.js"></script>
 </body>
