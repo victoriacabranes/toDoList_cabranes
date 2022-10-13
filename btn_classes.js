@@ -14,7 +14,7 @@ btnPrimary.addEventListener('click', () => {
     form.style.backgroundColor = '#ffd6ff'
     form.style.borderColor = '#ffd6ff'
     document.getElementById('button-addon2').style.backgroundColor = '#dd96a5'
-
+    
 })
 
 btnSuccess.addEventListener('click', () => {

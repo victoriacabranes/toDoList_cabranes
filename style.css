@@ -1,6 +1,5 @@
 .border-form {
     border-radius: 10px;
-    
     border: solid;
     border-color: white;
     border-width: 1px;
@@ -15,6 +14,7 @@
     font-size: 2rem;
 }
 
+/* botones */
 .btn-primary {
     background-color: #ffd6ff;
     border-color: #ffd6ff;
@@ -24,6 +24,12 @@
     background-color: #fdc4e3;
     border-color: #fdc4e3;
 }
+
+.btn-primary:focus {
+    background-color: #fdc4e3;
+    border-color: #fdc4e3;
+}
+
 
 .btn-success {
     background-color: #bbd0ff;
@@ -35,6 +41,10 @@
     border-color: #95b7ff;
 }
 
+.btn-success:focus {
+    background-color: #95b7ff;
+    border-color: #95b7ff;
+}
 
 .btn-info {
     background-color: #ffdab9;
@@ -42,6 +52,11 @@
 }
 
 .btn-info:hover {
+    background-color: #f8be8b;
+    border-color: #f8be8b;
+}
+
+.btn-info:focus{
     background-color: #f8be8b;
     border-color: #f8be8b;
 }
@@ -56,11 +71,9 @@
     border-color: #a09e9d;
 }
 
-
-ul {
-    list-style-type: none;
-    display: inline-flex;
-    flex-direction: column;
+.btn-secondary:focus {
+    background-color: #a09e9d;
+    border-color: #a09e9d;
 }
 
 .btn {
@@ -73,25 +86,52 @@ ul {
     background-color: rgb(185, 183, 183);
     border-color: rgb(185, 183, 183);
     color: white;
-    
 }
 
 #btn-empezar {
     width: 8rem;
     height: 3rem;
-    background-color:  #3d517a;
-    border-color: #3d517a;
+    background-color:  #4abd96;
+    border-color: #4abd96;
 }
 
 #btn-frase {
     width: 8rem;
     height: 3rem;
-    background-color:  #3d517a;
-    border-color: #3d517a;
+    background-color:  #4abd96;
+    border-color: #4abd96;
 }
+
+/* elementos */
 
 img {
     width: 25rem;
     height: auto;
 }
 
+.border-card {
+    border-radius: 10px;
+    
+    border: solid;
+    border-color: white;
+    border-width: 1px;
+    box-shadow: 5px 5px 19px 1px rgba(0,0,0,0.10);
+}
+
+.card {
+    border-color: white;
+}
+
+ul {
+    
+    display: inline-flex;
+    flex-direction: column;
+}
+
+i {
+    color: rgb(70, 65, 65);
+}
+
+.tachado {
+    text-decoration: line-through;
+}
